@@ -1,3 +1,3 @@
-# system-voting-smart-contracts-Front-End-
+# system-voting-smart-contracts
 
 # I+D Cryptography Project
