@@ -97,6 +97,27 @@ async function voteBiden(){
 
 }
 
+async function rightToVote(){
+
+    let inputVal = document.getElementById("walletAddress");
+
+    let options ={
+        contractAddress: "0x8bb2e856EA6787A4A055A917175C40F4c9657B15",
+        functionName: "giveRightToVote",
+        abi: [{"inputs":[{"internalType":"address","name":"voter","type":"address"}],"name":"giveRightToVote","outputs":[],"stateMutability":"nonpayable","type":"function"}],
+        params:{
+            voter: inputVal.value
+        }
+    }
+
+    await Moralis.executeFunction(options);
+
+    inputVal.value = "";
+
+}
+
+
+
 
 
 
@@ -105,3 +126,4 @@ document.getElementById("btn-login").onclick = login;
 document.getElementById("btn-votes").onclick = getActualVotes;
 document.getElementById("btn-biden").onclick = voteBiden;
 document.getElementById("btn-trump").onclick = voteTrump;
+document.getElementById("btn-AllowToVote").onclick = rightToVote;
