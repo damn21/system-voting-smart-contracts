@@ -116,13 +116,16 @@ async function rightToVote(){
 
 }
 
+async function charge(){
+
+    await logOut();
+    await login();
+
+}
 
 
 
 
-
-document.getElementById("btn-out").onclick = logOut;
-document.getElementById("btn-login").onclick = login;
 document.getElementById("btn-votes").onclick = getActualVotes;
 document.getElementById("btn-biden").onclick = voteBiden;
 document.getElementById("btn-trump").onclick = voteTrump;

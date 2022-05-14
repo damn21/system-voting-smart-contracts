@@ -13,7 +13,7 @@
     <script src="https://unpkg.com/moralis/dist/moralis.js"></script>
 </head>
 
-<body>
+<body onload=charge()>
     <!-- APP -->
     <div id="app">
         <div class="app-overlay"></div>
@@ -22,8 +22,6 @@
             <div class="logo">
                 <img src="images/star.svg">
                 <h1>ELECTION</h1>
-                <button class="login" id="btn-login">Login</button>
-                <button class="out" id="btn-out">Logout</button>
                 <button class="votes" id="btn-votes">Refresh Votes</button>
                 <input class="text" placeholder="Wallet Address" type="text" id="walletAddress">
                 <button class="atv" id="btn-AllowToVote">Allow To Vote</button>
