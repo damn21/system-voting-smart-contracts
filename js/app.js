@@ -140,10 +140,12 @@ async function charge(){
 
 }
 
+//set interval in order to refresh the votecount from the smartcontract everysecond
+setInterval(getActualVotes,1000);  
+
 
 
 //Give the onclick function value to ech button
-document.getElementById("btn-votes").onclick = getActualVotes;
 document.getElementById("btn-biden").onclick = voteBiden;
 document.getElementById("btn-trump").onclick = voteTrump;
 document.getElementById("btn-AllowToVote").onclick = rightToVote;
