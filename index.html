@@ -11,6 +11,8 @@
     />
     <link rel="stylesheet" href="styles/styles.css" />
     <link rel="stylesheet" href="styles/media-queries.css" />
+    <script src="https://cdn.jsdelivr.net/npm/web3@latest/dist/web3.min.js"></script>
+    <script src="https://unpkg.com/moralis/dist/moralis.js"></script>
   </head>
   <body>
       <!-- APP -->
@@ -21,6 +23,9 @@
           <div class="logo">
             <img src="images/star.svg">
             <h1>ELECTION</h1>
+            <button id="btn-login">Metamask Login</button>
+            <button id="btn-out">Metamask Logout</button>
+            <button id="btn-votes">Metamask GetVotes</button>
           </div>
         </header>
         <!-- MAIN-->
@@ -39,7 +44,7 @@
                     <span class="candidate-party">Republican Party</span>
                   </div>
                 </div>
-                <button class="card-btn btn-trump">VOTE</button>
+                <button class="card-btn btn-trump" id="btn-trump">VOTE</button>
               </div>
               <div class="card">
                 <img class="card-image" src="./images/biden.jpg">
@@ -54,7 +59,7 @@
                     <span class="candidate-party">Democratic Party</span>
                   </div>
                 </div>
-                <button class="card-btn btn-biden">VOTE</button>
+                <button class="card-btn btn-biden" id="btn-biden">VOTE</button>
               </div>
             </div>
         </main>

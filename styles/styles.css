@@ -187,6 +187,7 @@ main {
 
 .btn-trump,
 .btn-biden {
+    
     transition: all 0.5s ease;
 }
 
