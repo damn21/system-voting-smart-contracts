@@ -2,12 +2,13 @@
  * BASE STYLES *
  ***************/
 
+
 /* Variables */
 
 :root {
     --black: #1b1b29;
     --white: #ffffff;
-    --bg-overlay: RGB(253, 255, 206 , 0.96);
+    --bg-overlay: RGB(253, 255, 206, 0.96);
     --btn-red: #fe4c13;
     --btn-red-hover: #ee3a01;
     --btn-light-blue: #3fb3e4;
@@ -24,7 +25,7 @@
 body,
 html,
 #app {
-    height: 100% ;
+    height: 100%;
 }
 
 html {
@@ -32,9 +33,9 @@ html {
 }
 
 body {
-    font-family: "Montserrat",
-    sans-serif;
+    font-family: "Montserrat", sans-serif;
 }
+
 
 /*******
  * APP *
@@ -51,11 +52,11 @@ body {
     right: 0;
     left: 0;
     bottom: 0;
-    background: url(../images/american-flag.jpeg) no-repeat center
-    center fixed;
+    background: url(../images/american-flag.jpeg) no-repeat center center fixed;
     background-size: cover;
     z-index: -1;
 }
+
 
 /**********
  * HEADER *
@@ -73,23 +74,28 @@ header {
     justify-content: center;
 }
 
+
 /* ELECTION */
+
 .logo h1 {
     font-size: 4rem;
 }
 
+
 /* Star */
+
 .logo img {
     margin-right: 1rem;
     width: 4rem;
 }
+
 
 /*********
  * MAIN *
  ********/
 
 main {
-     height: 100%;
+    height: 100%;
 }
 
 .cards {
@@ -99,7 +105,9 @@ main {
     padding: 5rem 0;
 }
 
+
 /* Card */
+
 .card {
     width: 25rem;
     border: 2px solid var(--black);
@@ -113,7 +121,9 @@ main {
     margin-bottom: 5rem;
 }
 
+
 /* Card image */
+
 .card-image {
     width: 25rem;
     height: 20rem;
@@ -121,13 +131,15 @@ main {
     vertical-align: middle;
 }
 
+
 /* Card information */
+
 .card-info {
-  display: flex;
-  justify-content: space-evenly;
-  background: var(--white);
-  color: var(--black);
-  padding: 2rem 0;
+    display: flex;
+    justify-content: space-evenly;
+    background: var(--white);
+    color: var(--black);
+    padding: 2rem 0;
 }
 
 .candidate-votes {
@@ -148,13 +160,71 @@ main {
     font-weight: 600;
 }
 
+
+/* btns header*/
+
+.logo {
+    display: flexbox;
+    gap: 60px;
+}
+.login,.out,.votes,.atv{
+    height: 40px;
+    width: 130px;
+    background-color: #1b1b29;
+    border-radius:  6px ;
+    border-color: #ffffff;
+    color: #ffffff;
+    font-size: 20px;
+}
+
+.text{
+    height: 30px;
+    width: 130px;
+    color: #1b1b29;
+}
+.votes:hover{
+    cursor: pointer;
+    border-color: #1b1b29;
+    background-color: #ffffff;
+    color: #1b1b29;
+
+    
+}
+.atv:hover{
+    cursor: pointer;
+    border-color: #1b1b29;
+    background-color: #ffffff;
+    color: #1b1b29;
+
+    
+}
+.out:hover{
+    cursor: pointer;
+    border-color: #1b1b29;
+    background-color: #ffffff;
+    color: #1b1b29;
+
+    
+}
+.login:hover{
+    cursor: pointer;
+    border-color: #1b1b29;
+    background-color: #ffffff;
+    color: #1b1b29;
+
+    
+}
+
 /* Lines */
+
 .line {
     width: 0.1rem;
     background: var(--black);
 }
 
+
 /* Candidate info */
+
 .candidate-info {
     display: flex;
     flex-direction: column;
@@ -172,7 +242,9 @@ main {
     font-weight: 600;
 }
 
+
 /* Card button */
+
 .card-btn {
     width: 100%;
     border: none;
@@ -187,7 +259,6 @@ main {
 
 .btn-trump,
 .btn-biden {
-    
     transition: all 0.5s ease;
 }
 
@@ -198,21 +269,21 @@ main {
 .btn-biden {
     background: var(--btn-light-blue);
 }
-.container{
+
+.container {
     position: relative;
     align-items: center;
     padding: 20px 30px;
     width: 400px;
     background: #0b0909;
     border-radius: 4px;
-    box-shadow: 0 0 15px rgba(0,0,0,0.3);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
 }
 
-
-.signin{
+.signin {
     padding: 5px 12px;
     font-size: 3rem;
-    background: 1inear-gradient(45deg,#00d5fc, #046af6);
+    background: 1inear-gradient(45deg, #00d5fc, #046af6);
     margin-bottom: 10px;
     border-radius: 50px;
     text-align: right;
@@ -222,10 +293,10 @@ main {
     transition: 0.3s ease;
 }
 
-.signout{
+.signout {
     padding: 5px 12px;
     font-size: 3rem;
-    background: 1inear-gradient(45deg,#00d5fc, #046af6);
+    background: 1inear-gradient(45deg, #00d5fc, #046af6);
     margin-bottom: 10px;
     border-radius: 50px;
     text-align: right;
@@ -234,5 +305,3 @@ main {
     cursor: pointer;
     transition: 0.3s ease;
 }
-
-
